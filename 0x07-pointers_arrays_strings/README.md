@@ -1,1 +1,0 @@
-# This directory contains even more programs on pointers, arrays and strings. 

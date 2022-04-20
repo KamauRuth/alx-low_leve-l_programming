@@ -1,1 +1,0 @@
-## This directory contains more C programs on strings, pointers andd arrays.
