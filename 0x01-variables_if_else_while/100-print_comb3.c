@@ -1,29 +1,34 @@
 #include <stdio.h>
+
 /**
-* main - Print combinations of two digit numbers
-*
-* Return: Always 0 (Success)
+ * main - prints all possible different combinations of two digits
+ * Numbers must be separated by a comma followed by a space
+ * The two digits must be different
+ * such that 01 and 10 are considered the same combination of the two digits
+ * 0 and 1
+ * Return: Always (0)
 */
+
 int main(void)
-	{
-	int tens;
-	int ones;
+{	int i;
+	int j;
 
-	for (tens = 0; tens <= 9; tens++)
+	for (i = 48; i <= 56; i++)
 	{
-	for (ones = tens + 1; ones <= 9; ones++)
-	{
-	putchar(tens + '0');
-	putchar(ones + '0');
-
-	if (tens < 8)
-	{
-	putchar(',');
-	putchar(' ');
-	}
-	}
+		for (j = 49; j <= 57; j++)
+		{
+		if (j > i)
+		{
+			putchar(i);
+			putchar(j);
+			if (i != 56 || j != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+		}
 	}
 	putchar('\n');
-
-return (0);
+	return (0);
 }

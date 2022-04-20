@@ -1,2 +1,1 @@
-# alx-low_leve-l_programming
-for c language
+## This repo contains shell and C scripts that demonstrate the power of low level programming.

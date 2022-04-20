@@ -1,24 +1,25 @@
 #include <stdio.h>
 
 /**
-* main - Print all possible combinations of single digit numbers
-*
-* Return: Always 0 (Success)
+ * main - prints all numbers of base 10 with single digits such that
+ * they are followed by a comma and a space
+ * Return: Always (0;)
 */
+
+
 int main(void)
-{
-		int number;
+{	int n;
 
-		for (number = 0; number <= 9; number++)
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+		if (n != 57)
 		{
-		putchar(number + '0');
-		if (number < 9)
-		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
-		}
-		putchar('\n');
-
+	}
+	putchar('\n');
 	return (0);
+
 }

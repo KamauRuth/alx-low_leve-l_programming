@@ -1,21 +1,23 @@
 #include <stdio.h>
 
 /**
-* main - Print the numbers of base 16 in lowercase
-*
-* Return: Always 0 (Success)
+ * main - prints the hex numbers using function putcahr() only.
+ * Return: Always (0)
 */
+
 int main(void)
 {
-		char digit;
+	int n;
+	char i;
 
-		for (digit = '0'; digit <= '9'; digit++)
-		putchar(digit);
-
-		for (digit = 'a'; digit <= 'f'; digit++)
-		putchar(digit);
-
-		putchar('\n');
-
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+	}
+	for (i = 'a'; i <= 'f'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
 	return (0);
 }
