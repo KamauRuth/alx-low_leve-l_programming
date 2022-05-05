@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * _strspn - returns the number of bytes in the initial segment of s.

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  **_strstr  - find first occurrence of string.
