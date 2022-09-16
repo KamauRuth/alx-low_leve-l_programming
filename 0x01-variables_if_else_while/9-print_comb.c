@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - prints all numbers of base 10 with single digits such that
- * they are followed by a comma and a space
- * Return: Always (0;)
-*/
-
-
+ * main - Prints numbers between 0 to 9 with commas and spaces.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-{	int n;
+{
+	int i;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(i);
+		if (i != 57)
 		{
 			putchar(',');
 			putchar(' ');
@@ -21,5 +20,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-
 }

@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints the hex numbers using function putcahr() only.
- * Return: Always (0)
-*/
-
+ * main - Prints numbers between 0 to 9 and letters between a to f.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n;
-	char i;
+	int i;
 
-	for (n = 48; n < 58; n++)
+	for (i = 48; i < 58; i++)
 	{
-		putchar(n);
+		putchar(i);
 	}
-	for (i = 'a'; i <= 'f'; i++)
+	for (i = 97; i < 103; i++)
 	{
 		putchar(i);
 	}
