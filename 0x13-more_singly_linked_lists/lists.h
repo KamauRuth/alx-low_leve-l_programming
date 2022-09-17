@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #ifndef _LISTS_
 #define _LISTS_
+=======
+#ifndef LISTS_H
+#define LISTS_H
+>>>>>>> 58fdc4aa9c889ec77f038b45a8750f21e50cd1e5
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,6 +23,7 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+<<<<<<< HEAD
 /**
  * struct listp_s - singly linked list
  * @p: pointers of nodes
@@ -31,6 +37,8 @@ typedef struct listp_s
 	struct listp_s *next;
 } listp_t;
 
+=======
+>>>>>>> 58fdc4aa9c889ec77f038b45a8750f21e50cd1e5
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
